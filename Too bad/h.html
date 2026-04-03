@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>NiziUまとめサイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    u
+        {
+            color:#e6008a;
+        }
+        a
+        {
+            color:#e6008a;
+        }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    background:
+      radial-gradient(circle at top left, rgba(230, 0, 138, 0.18), transparent 35%),
+      radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.06), transparent 30%),
+      linear-gradient(135deg, #050505 0%, #0d0d0d 45%, #151515 100%);
+    color: #f5f5f5;
+    min-height: 100vh;
+    padding: 40px 20px;
+    letter-spacing: 0.03em;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    margin-bottom: 28px;
+  }
+
+  .cover {
+    width: 100%;
+    height: 300px;
+    border-radius: 24px;
+    background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)),
+      url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+    box-shadow:
+      0 20px 60px rgba(0, 0, 0, 0.55),
+      0 0 30px rgba(230, 0, 138, 0.18);
+    border: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(230, 0, 138, 0.10), transparent 40%, rgba(255,255,255,0.04));
+    pointer-events: none;
+  }
+
+  .card {
+    background: rgba(20, 20, 20, 0.88);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    padding: 32px 28px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:
+      0 16px 40px rgba(0,0,0,0.45),
+      0 0 24px rgba(230, 0, 138, 0.10);
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+    color: #ffffff;
+    letter-spacing: 0.08em;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #e6008a, #ff7acb);
+    box-shadow: 0 0 12px rgba(230, 0, 138, 0.5);
+  }
+
+  .lyrics {
+    margin-top: 8px;
+  }
+
+  .lyrics p {
+    font-size: 1.05rem;
+    line-height: 2.1;
+    color: #ececec;
+    white-space: normal;
+  }
+
+  u {
+    color: #ff4db2;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 77, 178, 0.4);
+  }
+
+  a {
+    color: #ff4db2;
+    text-decoration: none;
+    transition: 0.25s ease;
+  }
+
+  a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.45);
+  }
+
+  br {
+    content: "";
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 24px 14px;
+    }
+
+    .cover {
+      height: 220px;
+      border-radius: 18px;
+    }
+
+    .card {
+      padding: 24px 18px;
+      border-radius: 18px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+    .lyrics p {
+      font-size: 0.98rem;
+      line-height: 1.95;
+    }
+  }
+  h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  letter-spacing: 0.08em;
+  background: linear-gradient(90deg, #ffffff, #ff8fd2, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+body {
+  padding: 16px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.cover {
+  height: 45vw; /* 画面幅に応じて縮む */
+  max-height: 260px;
+}
+
+.card {
+  padding: 20px 16px;
+}
+
+.lyrics p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  word-break: break-word;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 画像 -->
+    <div class="hero">
+      <div class="cover"></div>
+    </div>
+
+    <!-- 歌詞 -->
+    <div class="card">
+      <h2>Too Bad</h2>
+      <div class="lyrics">
+<p>
+Yeah<br>
+Wanna？ wanna？<br>
+It's too bad for ya<br>
+Wanna？ wanna？(Ah)<br>
+ <br>
+ ためらいもなく 掻き乱してくる君<br>
+ <u>Don't like that don't like that</u> yeah<br>
+ Kinda boring ただ良い子に 意外な Something<br>
+ <u>I need that I need that</u><br>
+ <br>
+ 話聞くふりして Now we're gonna <u>be apart</u><br>
+ 完全に You & Me <u>入れ替わる side</u><br>
+ 顔に出てしまう It's so funny<br>
+ 構わないで What, so what?<br>
+ <br>
+ Say, wanna love me？ <u>Too bad</u><br>
+ Say, wanna hurt me？ <u>Too bad</u><br>
+ Say, wanna get me？ <u>Too bad</u> for ya <u>(woo woo woo)</u><br>
+ <br>
+ Say, wanna lead me？ <u>Too late</u><br>
+ Say, wanna keep me？ <u>You can't</u><br>
+ Say, wanna hold me？ <u>Too bad</u> for ya (<u>woo woo woo</u> yaeh)<br>
+ <br>
+ あなたの理想？ I don't like <u>that that</u><br>
+ 欲しいもの You couldn't <u>get get</u><br>
+ 昔のよう We can't go <u>back back</u><br>
+ 遅すぎるの It's too <u>bad bad bad</u> (yeah)<br>
+ <br>
+ Pushing pulling <u>全ては</u>私の<u>手の中</u><br>
+ No way (huh) Just beg <u>(just beg)</u><br>
+ Then maybe, I'll care ('bout you)<br>
+ どう縋っても I can let you go home <u>(home)</u><br>
+ 胸に刻んで Yeah yeah<br>
+ <br>
+ 私の思い通りに そう Now I <u>lead your heart</u><br>
+ 完全に I found me 必要ない Guide<br>
+ 自由感じて光る I'm so sparkly<br>
+ 悔しがって What, so what？<br>
+ <br>
+ Say, wanna love me？ <u>Too bad</u><br>
+ Say, wanna hurt me？ <u>Too bad</u><br>
+ Say, wanna get me？ <u>Too bad</u> for ya <u>(woo woo woo)</u><br>
+ <br>
+ Say, wanna lead me？ <u>Too late</u><br>
+ Say, wanna keep me？ <u>You can't</u><br>
+ Say, wanna hold me？ <u>Too bad</u> for ya (<u>woo woo woo</u> yaeh)<br>
+ <br>
+ あなたの理想？ I don't like <u>that that</u><br>
+ 欲しいもの You couldn't <u>get get</u><br>
+ 昔のよう We can't go <u>back back</u><br>
+ 遅すぎるの It's too <u>bad bad bad</u> (yeah)<br>
+ <br>
+ I lived for you 今は Wanna love myself<br>
+ この気持ち二度と手放さない No<br>
+ <u>It's too late Blame on you</u><br>
+ 自分らしい自分がいい Yeah, I Like it <u>(Fu〜〜〜〜〜〜〜！)</u><br>
+ <br>
+ Say, wanna love me？ <u>Too bad</u><br>
+ Say, wanna hurt me？ <u>Too bad</u><br>
+ Say, wanna get me？ <u>Too bad</u> for ya <u>(woo woo woo)</u><br>
+ <br>
+ Say, wanna lead me？ <u>Too late</u><br>
+ Say, wanna keep me？ <u>You can't</u><br>
+ Say, wanna hold me？ <u>Too bad</u> for ya (<u>woo woo woo</u> yaeh)<br>
+ <br>
+ あなたの理想？ I don't like <u>that that</u><br>
+ 欲しいもの You couldn't <u>get get</u><br>
+ 昔のよう We can't go <u>back back</u><br>
+ 遅すぎるの It's too <u>bad bad bad</u><br>
+
+</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
